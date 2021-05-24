@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ContactsProj.Views.ContactView"
+    Title="{Binding Item.FirstName}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Command="{Binding Save}" />
+        <ToolbarItem Text="Delete" Command="{Binding Delete}" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Padding="14">
+        <Label Text="Name" />
+        <Entry Text="{Binding Item.FirstName}" />
+        <Label Text="Phone Number" />
+        <Entry Text="{Binding Item.Number}"/>
+        <Label Text="Email" />
+        <Entry Text="{Binding Item.Email}"/>
+        
+    </StackLayout>
+</ContentPage>

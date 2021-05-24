@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ContactsProj"
+    x:Class="ContactsProj.Views.MainView"
+    Title="Contacts">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding Add}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ListView x:Name="ItemsListView"
+                  Grid.Row="1"
+                  RowHeight="90"
+                  ItemsSource="{Binding Items}"
+                  SelectedItem="{Binding SelectedItem}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                  
+               <ImageCell ImageSource= "{Binding Item.pic}"
+                          Text="{Binding Item.FirstName}"
+                          TextColor="CornflowerBlue"
+                          Detail="{Binding Item.Number}"></ImageCell>
+                            
+                       
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

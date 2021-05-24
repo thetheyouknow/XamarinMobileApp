@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{82974567-2ED8-4EE4-8C2A-431D2E6E85A6}|Default">
+  <MonoDevelop.Ide.ItemProperties.ContactsProj.Android PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.ContactsProj.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ContactsProj/Views/MainView.xaml.cs">
+    <Files>
+      <File FileName="ContactsProj/Repositories/ContactItemRepository.cs" Line="78" Column="47" />
+      <File FileName="ContactsProj/ViewModels/ContactViewModel.cs" Line="34" Column="41" />
+      <File FileName="ContactsProj/ViewModels/MainViewModel.cs" Line="32" Column="12" />
+      <File FileName="ContactsProj/Views/MainView.xaml" Line="26" Column="60" />
+      <File FileName="ContactsProj/Views/MainView.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ContactsProj" expanded="True">
+            <Node name="ContactsProj" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Pic" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="MainView.xaml" expanded="True">
+                  <Node name="MainView.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="ContactsProj.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint hitAction="PrintExpression" traceExpression="{items.Count}" file="/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/ViewModels/MainViewModel.cs" relfile="ContactsProj/ViewModels/MainViewModel.cs" line="32" column="13" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

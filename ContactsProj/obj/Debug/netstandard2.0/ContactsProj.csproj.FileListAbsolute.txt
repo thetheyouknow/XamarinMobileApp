@@ -1,0 +1,17 @@
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/bin/Debug/netstandard2.0/ContactsProj.deps.json
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/bin/Debug/netstandard2.0/ContactsProj.dll
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/bin/Debug/netstandard2.0/ref/ContactsProj.dll
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/bin/Debug/netstandard2.0/ContactsProj.pdb
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.csprojAssemblyReference.cache
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/Views/MainView.xaml.g.cs
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.AssemblyInfoInputs.cache
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.AssemblyInfo.cs
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.csproj.CoreCompileInputs.cache
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.csproj.Fody.CopyLocal.cache
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.dll
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ref/ContactsProj.dll
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/ContactsProj.pdb
+/Users/savittasivapalan/Projects/ContactsProj/ContactsProj/obj/Debug/netstandard2.0/Views/ContactView.xaml.g.cs

@@ -1,0 +1,44 @@
+﻿using System;
+using Autofac;
+using ContactsProj.Repositories;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Text;
+using Xamarin.Forms;
+using ContactsProj.ViewModels;
+using System.Linq;
+namespace ContactsProj
+{
+    public abstract class Bootstrapper
+    {
+        protected ContainerBuilder ContainerBuilder { get; private set; }
+
+        public Bootstrapper()
+        {
+            Initialize();
+            FinishInitialization();
+        }
+
+        protected virtual void Initialize()
+        {
+            var currentAssembly = Assembly.GetExecutingAssembly();
+            ContainerBuilder = new ContainerBuilder();
+
+            foreach (var type in currentAssembly.DefinedTypes
+                      .Where(e =>
+                             e.IsSubclassOf(typeof(Page)) ||
+                             e.IsSubclassOf(typeof(ViewModel))))
+            {
+                ContainerBuilder.RegisterType(type.AsType());
+            }
+
+            ContainerBuilder.RegisterType<ContactItemRepository>().SingleInstance();
+        }
+
+        private void FinishInitialization()
+        {
+            var container = ContainerBuilder.Build();
+            Resolver.Initialize(container);
+        }
+    }
+}
