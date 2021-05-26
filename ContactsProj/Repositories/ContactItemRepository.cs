@@ -15,9 +15,7 @@ namespace ContactsProj.Repositories
 
         public event EventHandler<Contact> OnItemAdded;
         public event EventHandler<Contact> OnItemUpdated;
-        public event EventHandler<Contact> OnItemDeleted;
-
-
+    
         private async Task CreateConnection()
         {
             if (connection != null)
@@ -74,8 +72,8 @@ namespace ContactsProj.Repositories
         public async Task Delete(Contact item)
         {
             await CreateConnection();
-            await connection.Table<Contact>().DeleteAsync(c => c.Id == item.Id);
-            OnItemDeleted?.Invoke(this, item);
+            await connection.DeleteAsync(item);
+            OnItemUpdated?.Invoke(this, item);
         }
     }
 }
