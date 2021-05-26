@@ -10,7 +10,7 @@ namespace ContactsProj.Repositories
     {
         event EventHandler<Contact> OnItemAdded;
         event EventHandler<Contact> OnItemUpdated;
-        event EventHandler<Contact> OnItemDeleted;
+       
 
         Task<List<Contact>> GetItems();
         Task AddItem(Contact item);
