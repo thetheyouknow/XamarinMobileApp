@@ -29,8 +29,6 @@ namespace ContactsProj.ViewModels
         public ICommand Delete => new Command(async () =>
         {
             await repository.Delete(Item);
-            //var itemView = Resolver.Resolve<MainView>();
-            //await Navigation.PushAsync(itemView);
             await Navigation.PopAsync();
         });
     }
