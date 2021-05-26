@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using System.Linq;
 using ContactsProj.Models;
+
 namespace ContactsProj.ViewModels
 {
     public class MainViewModel : ViewModel
@@ -38,9 +39,17 @@ namespace ContactsProj.ViewModels
         private ContactItemViewModel CreateTodoItemViewModel(Contact item)
         {
             var itemViewModel = new ContactItemViewModel(item);
+            itemViewModel.ItemStatusChanged += ItemStatusChanged;
             return itemViewModel;
         }
 
+        private void ItemStatusChanged(object sender, EventArgs e)
+        {
+            if (sender is ContactItemViewModel item)
+            {
+                Task.Run(async () => await repository.UpdateItem(item.Item));
+            }
+        }
         public ContactItemViewModel SelectedItem
         {
             get { return null; }
