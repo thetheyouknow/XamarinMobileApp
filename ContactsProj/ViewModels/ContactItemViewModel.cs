@@ -1,4 +1,4 @@
-﻿using ContactsProj.Models;
+using ContactsProj.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,6 +10,7 @@ namespace ContactsProj.ViewModels
     {
         public Contact Item { get; private set; }
         public ContactItemViewModel(Contact item) => Item = item;
+        public EventHandler ItemStatusChanged;
         
     }
 }
